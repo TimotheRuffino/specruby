@@ -16,14 +16,10 @@ def sum (x)
 
 
 def power (x,y)
-  x ** y
+  x ** y # ** = puissance
 end  
 
-def factorial (n)
-  total = 1
-  (1..n).each do |n|
-    n -= 1
-    
-  end
+def factorial (x)
+  (1..x).inject(:*) || x
 end
 

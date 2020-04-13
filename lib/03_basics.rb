@@ -7,9 +7,13 @@ def who_is_bigger(a,b,c)
   end
 end
 
-def reverse_upcase_noLTA 
-  str.reverse
-  str.capitalize
+def reverse_upcase_noLTA(str)
+  str.delete("l", "a", "t")
+  str.reverse!
+  str.split.map(&:upcase).join(' ')
+  
+  
+end
   
 
 

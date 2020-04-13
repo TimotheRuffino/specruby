@@ -11,13 +11,13 @@ x = [x] * n * " "
 end
 
 def first_word (x)
-  x.split()
+  x.split[0]
 end
 
 def titleize (x)
-  x.split.map(&:downcase)*('the' 'and')
   
   x.split.map(&:capitalize).join(' ')
+  
 end
 
 
